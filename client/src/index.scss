@@ -1,183 +1,125 @@
-// @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Satisfy&display=swap");
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-// :root {
-//   // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-//   font-weight: 400;
+#root {
+  width: 100%;
+}
 
-//   background: linear-gradient(120deg, red 20%, white 34%, blue 55%);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
+body, html {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow-x: clip;
+}
 
-//   font-synthesis: none;
-//   text-rendering: optimizeLegibility;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-// }
+.homeBody {
+  height: 100vh;
+  z-index: 0;
+  background-image: url("./images/five.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
 
-// .html{
-//   height: 100%;
-// }
+.interactive-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
 
-// #root {
-//   width: 100%;
-// }
+main {
+  flex: 1;
+}
 
 
-// .pageLayout {
+.playGamesBody{
+  height: 100vh;
+  z-index: 0;
+  background-image: url("./images/five.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .popup {
 //   display: flex;
+//   justify-content: center;
 //   align-items: center;
-//   justify-content: space-between;
-//   min-height: 100vh;
-//   padding: 0 2.8%;
-// }
-
-// // body, html{
-// //   padding: 0;
-// //   width: 100%;
-// //   height: 100vh;
-// //   margin: 0;
-// //   overflow-x: clip;
-// // }
-
-// //header 
-// .header {
-//   display: flex;
-//   min-width: 0px;
-//   width: 100%;
+//   position: fixed;
+//   z-index: 1;
+//   left: 0;
 //   top: 0;
-// }
-
-// .headerWording {
 //   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5);
 // }
 
-// .h1 {
-//   display: flex;
-//   justify-content: center;
+// .popup-content {
+//   background-color: #fff;
+//   padding: 20px;
+//   border-radius: 5px;
+//   text-align: center;
+//   position: relative;
 // }
 
-// .headerLinks {
-//   display: flex;
-//   flex-direction: row-reverse;
+// .close-btn {
+//   position: absolute;
+//   top: 10px;
+//   right: 10px;
+//   font-size: 24px;
+//   cursor: pointer;
 // }
 
-
-
-// //homeBody
-// .bigHomeBody{
-//   width: 100%;
-//   display: flex;
-//   flex-direction: row;
-// }
-
-
-// .stateListContainer {
-//   width: 15%;
-//   display: flex;
-//   justify-content: center;
-
-// }
-
-// .stateLinksList {
-//   display: flexbox;
-//   flex-direction: column; 
-//   align-items: center;
-//   gap: 1%;
-//   flex: 1;
-//   padding-left: 22%;
-//   padding-right: 2px;
-
-//   // &:last-child {
-//   //   border-right:2px solid #ccc;
-  
-//   // }
-//   // .stateLink {
-//   //   width: 50%; // Set the width of each column to 50% of the container
-//   // //   display: inline-flex; // Display content items in a row
-//   // //   justify-content: center; // Center the content horizontally within each column
-//   // }
-// }
-
-
-// // .stateLinksList {
-// //   // width: 100%; 
-// //   // column-count: 2; 
-// //   // column-gap: 0px; 
-// // }
-
-// // .stateLink {
-// //   // break-inside: avoid-column; 
-// //   // padding-left: 30px;
-// //   // margin-right: 0px;
-// //   color: black;
-// //   font-size: 20px;
-// // }
-
-// .stateLink{
-//   color: rgb(13, 20, 55);
-//   font-size: 28px;
-// }
-
-// // .additionalUSALinks{
-
-// // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //footer 
-// .footer {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   min-width: 0px;
-//   width: 100%;
-//   margin: 0;
-//   text-decoration: inherit;
-//   bottom: 0;
-//   padding: 0;
-//   z-index: 2;
-//   position: static;
-//   padding-bottom: 0%;
-// }
-
-
-
-
-
-
-
-
-// //button 
-// a:hover {
-//   color: #000000;
-// }
-
-// button:hover {
-//   border-color: #b41a1a;
-// }
-
-// button:focus,
-// button:focus-visible {
-//   outline: 4px auto -webkit-focus-ring-color;
-// }

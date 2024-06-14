@@ -1,18 +1,19 @@
 
+// function Header() {
+//     return (
+//         <div>
+//             <div className="header">
+//             <nav> 
+//                     <h1><a className="homePageLink" href="/">Home</a></h1>
+//                 </nav>
+//             </div>
+//             {/* <nav className="gameLinks">
+//                 <h2><a className="playLink" href="/play">Play</a></h2>
+//             </nav> */}
 
-function Header() {
-    return (
-        <header className="header">
-            <div className="headerWording">
-                <h1 className="h1">The United States of America</h1>
-                <nav className="headerLinks">
-                    <h2><a href="/">Home</a></h2>
-                    {/* <h2><a href="/">SignIn</a></h2>
-                    <h2><a href="/">SignUp</a></h2> */}
-                </nav>
-            </div>
-        </header>
-    )
-}
+//         </div>
+        
+//     )
+// }
 
-export default Header;
+// export default Header;
