@@ -1,19 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { Header } from './components';
-import { Home, PlayGames } from './pages';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Door from './pages/Door';
 
-export default function App() {
-    return (
+import Home from './pages/Home';
 
-            <>
-                
-                <main>
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/PlayGames" element={<PlayGames />} />
-                    </Routes>
-                </main>
-            </>
-     
-    );
-}
+import ProtectedRoute from './components/ProtectedRoute';
+
+const App = () => (
+  <Routes>
+    <Route path="/" element={<Door />} />
+    <Route path="/Home" element={<Home />} />
+
+    <Route path="/home" element={<ProtectedRoute element={<Home />} />} />
+
+  </Routes>
+);
+
+export default App;
+
